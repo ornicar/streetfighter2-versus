@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <style>
+      iframe { height: 100%; width: 50%; border: none; overflow-y: auto; }
+    </style>
+  </head>
+  <body>
+    <script>
+      var base = "http://streetfighter-fr.com/SF2%20Guide/";
+      var fighters = ["ssf2ryu.htm", "ssf2ehonda.htm", "ssf2blanka.htm", "ssf2guile.htm", "ssf2M.Bison.htm", "ssf2ken.htm", "ssf2chunli.htm", "ssf2zangief.htm", "ssf2dhalsim.htm", "ssf2sagat.htm", "ssf2balrog.htm", "ssf2thawk.htm", "ssf2feilong.htm", "ssf2deejay.htm", "ssf2cammy.htm", "ssf2vega.htm"];
+      for (var pos in ["left", "right"]) {
+        var figher = fighters[Math.floor(Math.random() * fighters.length)];
+        document.write('<iframe src="' + base + figher +'" style="float: ' + pos +'"></iframe>');
+      }
+    </script>
+  </body>
+</html>
