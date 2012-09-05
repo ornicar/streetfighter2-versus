@@ -7,11 +7,11 @@
   <body>
     <script>
       var base = "http://streetfighter-fr.com/SF2%20Guide/";
-      var fighters = ["ssf2ryu.htm", "ssf2ehonda.htm", "ssf2blanka.htm", "ssf2guile.htm", "ssf2M.Bison.htm", "ssf2ken.htm", "ssf2chunli.htm", "ssf2zangief.htm", "ssf2dhalsim.htm", "ssf2sagat.htm", "ssf2balrog.htm", "ssf2thawk.htm", "ssf2feilong.htm", "ssf2deejay.htm", "ssf2cammy.htm", "ssf2vega.htm"];
-      for (var pos in ["left", "right"]) {
-        var figher = fighters[Math.floor(Math.random() * fighters.length)];
-        document.write('<iframe src="' + base + figher +'" style="float: ' + pos +'"></iframe>');
-      }
+      <!--var fighters = ["ssf2ryu.htm", "ssf2ehonda.htm", "ssf2blanka.htm", "ssf2guile.htm", "ssf2M.Bison.htm", "ssf2ken.htm", "ssf2chunli.htm", "ssf2zangief.htm", "ssf2dhalsim.htm", "ssf2sagat.htm", "ssf2balrog.htm", "ssf2thawk.htm", "ssf2feilong.htm", "ssf2deejay.htm", "ssf2cammy.htm", "ssf2vega.htm"];-->
+      var fighters = ["Ryu", "Ehonda", "Blanka", "Guile", "m.Bison", "Ken", "Chunli", "Zangief", "Dhalsim", "Sagat", "Balrog", "Thawk", "Feilong", "Deejay", "Cammy", "Vega"];
+      var fighter1 = fighters[Math.floor(Math.random() * fighters.length)];
+      var fighter2 = fighters[Math.floor(Math.random() * fighters.length)];
+      document.write(fighter1 + " vs " + fighter2);
     </script>
   </body>
 </html>
